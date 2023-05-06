@@ -3,7 +3,7 @@
         "id": 1,
         "brand": "Yotube Premium",
         "price": 50,
-        "image": "./lvp.png",
+        "image": "./you.PNG",
         "date": "sept-19-2023"
 
     },
@@ -12,7 +12,7 @@
         "id": 2,
         "brand": "Netflix Premium",
         "price": 50,
-        "image": "./lvp.png",
+        "image": "./net.PNG",
         "date": "sept-19-2023"
     },
 
@@ -20,7 +20,7 @@
         "id": 3,
         "brand": "Pareon Membership",
         "price": 50,
-        "image": "./lvp.png",
+        "image": "./pat.PNG",
         "date": "sept-19-2023"
     },
 
@@ -28,7 +28,7 @@
         "id": 4,
         "brand": "Playstation",
         "price": 50,
-        "image": "./lvp.png",
+        "image": "./play.PNG",
         "date": "sept-19-2023"
     },
 
@@ -36,15 +36,7 @@
         "id": 5,
         "brand": "Airbnb",
         "price": 50,
-        "image": "./lvp.png",
-        "date": "sept-19-2023"
-    },
-
-    {
-        "id": 10,
-        "brand": "Versace",
-        "price": 50,
-        "image": "./lvp.png",
+        "image": "./air.PNG",
         "date": "sept-19-2023"
     }
 

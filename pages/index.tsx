@@ -1,8 +1,8 @@
 // import Head from 'next/head'
 // import Image from 'next/image'
 // import styles from '@/styles/Home.module.css'
-import { Box, Flex, Heading, Text, IconButton} from '@chakra-ui/react';
-import { IoBatteryFullSharp, IoWifiSharp, IoBarChartOutline, IoSearchOutline, IoReceipt} from 'react-icons/io5';
+import { Box, Flex, Heading, Text, IconButton, CircularProgress, CircularProgressLabel} from '@chakra-ui/react';
+import { IoBatteryFullSharp, IoWifiSharp, IoBarChartOutline, IoSearchOutline, IoReceipt, IoCloseCircleOutline} from 'react-icons/io5';
 import { FiCopy } from 'react-icons/fi';
 import { BsSend } from 'react-icons/bs';
 import { MdOutlineRequestQuote } from 'react-icons/md';
@@ -72,8 +72,8 @@ const Home = () => {
               </Box>
             </Flex>
             <Flex gap={'10px'} ml={'4em'}>
-              <BiMessageDots fontSize={"40px"} />
-              <TbBellPlusFilled fontSize={"40px"} />
+              <BiMessageDots fontSize={"30px"} />
+              <TbBellPlusFilled fontSize={"30px"} />
             </Flex>
           </Flex>
 
@@ -90,8 +90,19 @@ const Home = () => {
             </Flex>
           </Box>
 
-          <Flex width={'94%'} m={'auto'} border={'1px solid grey'} height={'80px'} borderRadius={'14px'}>
-
+          <Flex width={'94%'} m={'auto'} border={'1px solid grey'} height={'80px'}
+           borderRadius={'14px'} padding={'10px'} gap={'1.5em'}>
+            <Box>
+              <CircularProgress value={60} color='blue' position={'relative'}
+               >
+              </CircularProgress>
+            </Box>
+              <Box position={'absolute'} padding={'14px'}>
+                <CircularProgress value={30} color='yellow'
+                ></CircularProgress>
+              </Box>
+              <Text fontSize={'14px'} mt={'10px'}>Your spending decrease -10% from last month. Good job.</Text>
+              <IoCloseCircleOutline  fontSize={'40px'}/>
           </Flex>
 
           <Box width={'94%'} margin={'auto'} mb={'20px'}>
@@ -184,13 +195,22 @@ const Home = () => {
           <Box width={'94%'} margin={'auto'} overflow={'hidden'}>
             <Heading mb={'12px'}>Deals</Heading>
             <Flex gap={'15px'} overflow={'hidden'}>
-              <Box width={'525px'} bg={'red'} height={'130px'} 
-                borderRadius={'14px'} pl={'10px'} pt={'4em'}>
-                <Text>Promotion <br />Banner </Text>
+              <Box bg={'blue'} width={'525px'} height={'130px'} borderRadius={'14px'} 
+                >
+                <Box className='lvp-bg' 
+                  pl={'10px'} pt={'4em'} 
+                  >
+                  <Text>Promotion <br />Banner </Text>
+                </Box>
               </Box>
-              <Box width={'225px'} bg={'green'} height={'130px'} 
-                borderRadius={'14px'} pl={'10px'} pt={'4em'}>
-                <Text>Promotion <br />Banner </Text>
+
+              <Box bg={'orange'} width={'225px'} height={'130px'}
+                borderRadius={'14px'}>
+                <Box className='lvp-bg' 
+                  pl={'10px'} pt={'4em'}
+                  >
+                  <Text>Promotion <br />Banner </Text>
+                </Box>
               </Box>
             </Flex>
           </Box>
@@ -234,7 +254,7 @@ const Home = () => {
                       <Flex className='box' key={ transaction.id }>
                           <Box bg={'#80808066'} padding={'12px'} height={'fit-content'}
                            marginRight={'16px'} borderRadius={'12px'}>
-                            <img className='prod-img' src={transaction.image} alt="" width={'30px'} height={'30px'}/>
+                            <img className='prod-img' src={transaction.image} alt="" width={'50px'} height={'50px'}/>
                           </Box>
                           <Box mr={'76px'} mt={'6px'}>
                             <Heading fontSize={'14px'} mb={'10px'}>{transaction.brand}</Heading>
@@ -266,11 +286,6 @@ export default Home
 
 
 
-// width: 80%;
-//     margin: auto;
-//     background: gray;
-//     padding: 18px;
-//     border-radius: 18px;
 
 
 

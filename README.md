@@ -22,17 +22,22 @@ The `pages/api` directory is mapped to `/api/*`. Files in this directory are tre
 
 This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
-## Learn More
+## Installing Node.js and npm
+Before setting up this Next.js, I ensured that Node.js and npm are installed on your machine. You can install the latest version of Node.js on the official Node.js website: https://nodejs.org/en/download/.
 
-To learn more about Next.js, take a look at the following resources:
+## Creating new Next.js project
+After installing the Node.js and npm, i used this command: " npx create-next-app@latest --ts " on my terminal to create a new Next.js app.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Running development server
+After creating the new Next.js app and followed all the neccessary instructions, i ran this command: " npm run dev " on my terminal to start the development server.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## Installing Chakra UI
+To install Chakra UI, you can run this command on your terminal: " npm i @chakra-ui/react @emotion/react @emotion/styled framer-motion "
 
-## Deploy on Vercel
+## Provider setup
+After installing Chakra UI, you need to set up the ChakraProvider at the root of your application.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Go to pages/_app.js or pages/_app.tsx (create it if it doesn't exist) and wrap the Component with the ChakraProvider:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## Installing react-icons
+To install react-icons , you can run this command on your terminal : " npm install react-icons "

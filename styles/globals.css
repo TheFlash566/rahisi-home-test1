@@ -128,3 +128,7 @@ a {
   background-color: gray;
   margin-bottom: 12px;
 }
+
+.lvp-bg {
+  background-image: url('../public/lvp.png');
+}
