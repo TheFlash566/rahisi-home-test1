@@ -34,7 +34,7 @@ const Home = () => {
 
         <Box 
           className='lvp-image'
-          width={['94%', '26%']} 
+          width={['97%', '26%']} 
           color='white' 
           alignItems={"center"} 
           height={"auto"}
@@ -71,7 +71,7 @@ const Home = () => {
               <Text fontSize={".9rem"}>Have a nice day!</Text>
               </Box>
             </Flex>
-            <Flex gap={'10px'} ml={'4em'}>
+            <Flex gap={'10px'} ml={'6em'}>
               <BiMessageDots fontSize={"30px"} />
               <TbBellPlusFilled fontSize={"30px"} />
             </Flex>
@@ -105,7 +105,7 @@ const Home = () => {
               <IoCloseCircleOutline  fontSize={'40px'}/>
           </Flex>
 
-          <Box width={'94%'} margin={'auto'} mb={'20px'}>
+          <Box width={'90%'} margin={'auto'} mb={'20px'}>
             <Flex fontSize={'73px'} gap={'.5em'} textAlign={'center'}>
               <Box>
                 <IconButton
@@ -220,26 +220,26 @@ const Home = () => {
             <Heading mb={'20px'} fontSize={'20px'}>Most Recipient</Heading>
             <Flex gap={'20px'}>
               <Box textAlign={'center'}> 
-                <Box className='reps'></Box>
+                <Box className='reps1'></Box>
                 <Text>Lucky</Text>
               </Box> 
 
               <Box textAlign={'center'}>
-                <Box className='reps'></Box>
+                <Box className='reps2'></Box>
                 <Text>Nicole</Text>
               </Box> 
 
               <Box textAlign={'center'}>
-                <Box className='reps'></Box>
+                <Box className='reps3'></Box>
                 <Text>Bruno</Text>
               </Box>
 
               <Box textAlign={'center'}>
-                <Box className='reps'></Box>
+                <Box className='reps4'></Box>
                 <Text>Marco</Text>
               </Box>
               <Box textAlign={'center'}>
-                <Box className='reps'></Box>
+                <Box className='reps5'></Box>
                 <Text>Anne</Text>
               </Box>
 
