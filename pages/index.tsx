@@ -217,7 +217,7 @@ const Home = () => {
 
           <Flex flexDirection={'column'} width={'94%'} margin={'auto'} mt={'25px'} 
             overflow={'hidden'} mb={'1.5em'}>
-            <Heading mb={'20px'} fontSize={'20px'}>Most Recipient</Heading>
+            <Heading mb={'20px'} fontSize={'18px'}>Most Recipient</Heading>
             <Flex gap={'20px'}>
               <Box textAlign={'center'}> 
                 <Box className='reps1'></Box>
@@ -247,7 +247,8 @@ const Home = () => {
           </Flex>
 
           <Flex flexDirection={'column'} width={'94%'} margin={'auto'}>
-            <Flex flexDirection={'column'} gap={'1.5em'}>
+            <Heading fontSize={'18px'}>Recent Transactions</Heading>
+            <Flex flexDirection={'column'} gap={'1.5em'} mt={'25px'}>
                 { 
                   Data && Data.map( transaction => {
                     return(
